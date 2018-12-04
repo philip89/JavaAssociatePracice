@@ -19,8 +19,6 @@ public class ParseStringToLong{
 
         //This is how to use longValue
         Float i = new Float (3.0);
-        long b;
-
         i.longValue();
 
 
