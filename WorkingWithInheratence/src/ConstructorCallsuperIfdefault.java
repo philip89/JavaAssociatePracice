@@ -5,6 +5,17 @@ public class ConstructorCallsuperIfdefault {
 
         B b = new B();
 
+        A[] a, al;
+        B[] b2;
+
+        a = new A[10];al = a;
+//        b2 = (B[]) a;
+        b2 = new B[20];
+        a =  b2;
+        al = b2;
+        b2 = (B[]) a;
+        b2 = (B[]) al;
+
     }
 
 }

@@ -1,18 +1,40 @@
-public class testclass  {
-    static{
-    }
-    public static void main(String []args){
+import java.util.ArrayList;
+import java.util.List;
+public class testclass {
+    public static void main(String[] args) throws Exception {
 
-        String s = "123";
-        Long l = Long.valueOf(s).longValue();
+        int[][] p = {{1, 0}, {2, 3}, {4, 5}};
+        for (int x = 0; x <=p.length; x++) {
+            System.out.println(p[x]);
+        }
 
-        System.out.println(l);
+
+        List a = new ArrayList();
+        a.add(1);
+        a.add("3");
+
     }
 
-    Object m1(){
-        return new Object();
+
+}
+
+class B {
+
+     public static void main(String [] args)throws Exception{
+        B b = new B();
+        b.s(10);
+
+
     }
-    void m2(){
-        Object s = (Object) m1();
+
+    public void s(int q){
+        A a = new A();
+        System.out.println(a.q);
     }
 }
+
+class A {
+    protected int q=0;
+
+}
+
